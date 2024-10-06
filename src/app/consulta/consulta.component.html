@@ -1,0 +1,19 @@
+<div class="canvas">
+  <app-header title="CONSULTA DE USUARIOS"></app-header>
+  <div
+    class="container-fluid d-flex flex-row flex-wrap align-items-center justify-content-center"
+  >
+    <app-user
+      *ngFor="let usuario of usuarios; index as index"
+      id="{{ index }}"
+      nombre="{{ usuario.nombre }}"
+      paterno="{{ usuario.paterno }}"
+      materno="{{ usuario.materno }}"
+      cargo="{{ usuario.cargo }}"
+      telefono="{{ usuario.telefono }}"
+      username="{{ usuario.username }}"
+    />
+  </div>
+
+  <app-footer></app-footer>
+</div>

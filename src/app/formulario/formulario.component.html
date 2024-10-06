@@ -1,0 +1,37 @@
+<div class="container d-flex border rounded mt-3">
+  <div class="mb-3 mx-5">
+    <label class="form-label">Nombre</label>
+    <input type="text" class="form-control" [(ngModel)]="usuarios.nombre" />
+  </div>
+
+  <div class="mb-3 mx-5">
+    <label class="form-label">Apellido paterno</label>
+    <input type="text" class="form-control" [(ngModel)]="usuarios.paterno" />
+  </div>
+
+  <div class="mb-3 mx-5">
+    <label class="form-label">Apellido materno</label>
+    <input type="text" class="form-control" [(ngModel)]="usuarios.materno" />
+  </div>
+</div>
+
+<div class="container d-flex border rounded mt-3">
+  <div class="mb-3 mx-5">
+    <label class="form-label">Cargo</label>
+    <input type="text" class="form-control" [(ngModel)]="usuarios.cargo" />
+  </div>
+
+  <div class="mb-3 mx-5">
+    <label class="form-label">Teléfono</label>
+    <input type="text" class="form-control" [(ngModel)]="usuarios.telefono" />
+  </div>
+
+  <div class="mb-3 mx-5">
+    <label class="form-label">Username</label>
+    <input type="text" class="form-control" [(ngModel)]="usuarios.username" />
+  </div>
+</div>
+
+<button class="btn btn-primary mt-3" (click)="saveUser()">
+  AGREGAR USUARIO
+</button>

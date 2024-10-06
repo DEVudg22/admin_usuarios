@@ -1,0 +1,29 @@
+<div class="card bg-light bg-subtle mx-5 my-2 p-1" style="width: 18rem">
+  <img
+    src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png"
+    class="card-img-top mx-1"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ nombre }} {{ paterno }} {{ materno }}</h5>
+    <p class="card-text">Cargo: {{ cargo }}</p>
+    <p class="card-text">Teléfono: {{ telefono }}</p>
+    <p class="card-text">Username: {{ username }}</p>
+    <div class="d-flex justify-content-center gap-2">
+      <a
+        [routerLink]="[
+          '/editar',
+          id,
+          nombre,
+          paterno,
+          materno,
+          cargo,
+          telefono,
+          username
+        ]"
+        ><button class="btn btn-warning">EDITAR</button></a
+      >
+      <button class="btn btn-danger" (click)="deleteItem(id)">BORRAR</button>
+    </div>
+  </div>
+</div>

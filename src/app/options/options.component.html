@@ -1,0 +1,15 @@
+<div
+  class="card bg-secondary bg-subtle opacity mx-5 my-2 p-3"
+  style="width: 18rem"
+>
+  <img src="{{ imgUrl }}" class="card-img-top mx-1" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">{{ desc }}</p>
+    <a routerLink="{{ pageUrl }}" class="btn btn-outline-light">{{
+      btnName
+    }}</a>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

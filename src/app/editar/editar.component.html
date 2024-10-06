@@ -1,0 +1,82 @@
+<div>
+  <h1 class="text-center">EDITAR USUARIO: {{ id }}</h1>
+
+  <div class="container border rounded" style="width: 500px">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">NOMBRE</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nombre"
+        [(ngModel)]="newUSer.nombre"
+        value="{{ newUSer.nombre }}"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="paterno" class="form-label">PATERNO</label>
+      <input
+        type="text"
+        class="form-control"
+        id="paterno"
+        [(ngModel)]="newUSer.paterno"
+        value="{{ newUSer.paterno }}"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="materno" class="form-label">MATERNO</label>
+      <input
+        type="text"
+        class="form-control"
+        id="materno"
+        [(ngModel)]="newUSer.materno"
+        value="{{ newUSer.materno }}"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="cargo" class="form-label">CARGO</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cargo"
+        [(ngModel)]="newUSer.cargo"
+        value="{{ newUSer.cargo }}"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="telefono" class="form-label">TELEFONO</label>
+      <input
+        type="text"
+        class="form-control"
+        id="telefono"
+        [(ngModel)]="newUSer.telefono"
+        value="{{ newUSer.telefono }}"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="username" class="form-label">USERNAME</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        [(ngModel)]="newUSer.username"
+        value="{{ newUSer.username }}"
+        autocomplete="off"
+      />
+    </div>
+    <a routerLink="/consulta"
+      ><button class="btn btn-success" (click)="editUser(id)">
+        ACTUALIZAR
+      </button></a
+    >
+  </div>
+</div>
